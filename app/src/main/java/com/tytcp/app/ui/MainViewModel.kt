@@ -92,6 +92,10 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         val t = state.template ?: return
         if (!templateDirty) return
         templateDirty = false
+        // Имя и заставка на главном экране подставляются при записи поверх шаблона,
+        // поэтому переносим туда то, что поменяли в редакторе.
+        state = state.copy(name = t.radioName, intro1 = t.introLine1, intro2 = t.introLine2)
+        persistForm()
         val bytes = if (t.hasRdt) t.toRdt() else t.bin.copyOf()
         viewModelScope.launch {
             withContext(Dispatchers.IO) { templateFile.writeBytes(bytes) }
@@ -302,6 +306,13 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         val cp = Codeplug(prog.readCodeplug())
         val note = buildString {
             append("ID ${cp.radioId}, «${cp.radioName}»")
+            val ed = CodeplugEditor(cp)
+            val gs = ed.record("GeneralSettings")
+            val mode = ed.display(FieldRef(gs, 0, gs.field("GsIntroScreen")))
+            append(
+                if (mode == "Picture") ", заставка: картинка"
+                else ", заставка: «${cp.introLine1}» / «${cp.introLine2}»"
+            )
             lastWritten?.let {
                 val d = cp.diffCount(it)
                 append(if (d == 0) " — совпадает с последней записью ✓" else " — отличается от последней записи в $d байт")

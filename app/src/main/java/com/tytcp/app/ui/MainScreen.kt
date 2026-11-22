@@ -208,7 +208,10 @@ fun MainScreen(vm: MainViewModel, openEditor: () -> Unit) {
             title = { Text("Записать кодплаг?") },
             text = {
                 Text(
-                    "Radio ID: ${s.idText}\nИмя: ${s.name}\n\nНе отключайте кабель до окончания записи " +
+                    "Radio ID: ${s.idText}\nИмя: ${s.name}\n" +
+                        "Заставка: «${s.intro1}» / «${s.intro2}»" +
+                        (if (s.introAsText) " (надпись)" else "") +
+                        "\n\nНе отключайте кабель до окончания записи " +
                         "(около минуты)."
                 )
             },
