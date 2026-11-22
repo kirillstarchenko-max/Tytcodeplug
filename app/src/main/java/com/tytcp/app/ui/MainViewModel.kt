@@ -15,6 +15,8 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.tytcp.app.codeplug.Codeplug
+import com.tytcp.app.codeplug.CodeplugEditor
+import com.tytcp.app.codeplug.FieldRef
 import com.tytcp.app.usb.DfuDevice
 import com.tytcp.app.usb.Uv390Programmer
 import kotlinx.coroutines.Dispatchers
@@ -42,6 +44,7 @@ data class UiState(
     val intro1: String = "",
     val intro2: String = "",
     val autoIncrement: Boolean = true,
+    val introAsText: Boolean = false,
     val busy: Boolean = false,
     val lastRead: Codeplug? = null,
     val lastReadNote: String = "",
@@ -62,6 +65,39 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     private val prefs = app.getSharedPreferences("settings", Context.MODE_PRIVATE)
     private val templateFile = File(app.filesDir, "template.dat")
     private val journalFile = File(app.filesDir, "journal.csv")
+
+    // --- редактор шаблона ---------------------------------------------------
+
+    /** Счётчик изменений: экраны редактора перечитывают значения при его смене. */
+    var editVersion by mutableStateOf(0)
+        private set
+    private var templateDirty = false
+    private var editorFor: Codeplug? = null
+    private var editorCache: CodeplugEditor? = null
+
+    val editor: CodeplugEditor?
+        get() {
+            val t = state.template ?: return null
+            if (editorFor !== t) { editorFor = t; editorCache = CodeplugEditor(t) }
+            return editorCache
+        }
+
+    fun edited() {
+        editVersion++
+        templateDirty = true
+    }
+
+    /** Сохранить правки шаблона в память приложения (вызывается при выходе из редактора). */
+    fun saveTemplateEdits() {
+        val t = state.template ?: return
+        if (!templateDirty) return
+        templateDirty = false
+        val bytes = if (t.hasRdt) t.toRdt() else t.bin.copyOf()
+        viewModelScope.launch {
+            withContext(Dispatchers.IO) { templateFile.writeBytes(bytes) }
+            log("Шаблон сохранён: ID ${t.radioId}, «${t.radioName}»")
+        }
+    }
 
     /** Образ, последний раз записанный в рацию — для сверки при чтении. */
     private var lastWritten: Codeplug? = null
@@ -86,6 +122,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
         state = state.copy(
             autoIncrement = prefs.getBoolean("autoIncrement", true),
+            introAsText = prefs.getBoolean("introAsText", false),
             idText = prefs.getString("idText", "") ?: "",
             journal = loadJournal(),
         )
@@ -139,6 +176,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     fun setIntro1(v: String) { state = state.copy(intro1 = v.take(Codeplug.INTRO_MAX)); persistForm() }
     fun setIntro2(v: String) { state = state.copy(intro2 = v.take(Codeplug.INTRO_MAX)); persistForm() }
     fun setAutoIncrement(v: Boolean) { state = state.copy(autoIncrement = v); persistForm() }
+    fun setIntroAsText(v: Boolean) { state = state.copy(introAsText = v); persistForm() }
 
     private fun persistForm() {
         prefs.edit()
@@ -147,6 +185,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             .putString("intro1", state.intro1)
             .putString("intro2", state.intro2)
             .putBoolean("autoIncrement", state.autoIncrement)
+            .putBoolean("introAsText", state.introAsText)
             .apply()
     }
 
@@ -245,12 +284,18 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
     private fun buildImage(): Codeplug? {
         val t = state.template ?: return null
-        return t.copy().apply {
+        val img = t.copy().apply {
             radioId = state.idText.toInt()
             radioName = state.name
             introLine1 = state.intro1
             introLine2 = state.intro2
         }
+        if (state.introAsText) {
+            val ed = CodeplugEditor(img)
+            val gs = ed.record("GeneralSettings")
+            ed.setString(FieldRef(gs, 0, gs.field("GsIntroScreen")), "Character String")
+        }
+        return img
     }
 
     fun readFromRadio() = runOp("Чтение") { prog ->

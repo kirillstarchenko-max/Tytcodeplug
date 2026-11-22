@@ -1,0 +1,4000 @@
+{
+  "comments": [
+    "Copyright 2017-2021 Dale Farnsworth. All rights reserved.",
+    "",
+    "Dale Farnsworth",
+    "1007 W Mendoza Ave",
+    "Mesa, AZ  85210",
+    "USA",
+    "",
+    "dale@farnsworth.org",
+    "",
+    "This file describes the binary format of codeplug files.",
+    "",
+    "The information used to initially generate this file was obtained",
+    "from the excellent MD380 codeplug format description contained in",
+    "http://www.iz2uuf.net/wp/index.php/2016/06/04/tytera-dm380-codeplug-binary-format/"
+  ],
+  "codeplugs": [
+    {
+      "type": "MD-380",
+      "models": [
+        "MD380",
+        "DR780"
+      ],
+      "ext": "rdt",
+      "rdtSize": 262709,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_md380",
+        "GeneralSettings_md380",
+        "MenuItems",
+        "RadioButtons",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts",
+        "GroupLists",
+        "Zones_md380",
+        "ScanLists_md380",
+        "Channels_md380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "RT3",
+      "models": [
+        "DR780"
+      ],
+      "ext": "rdt",
+      "rdtSize": 262709,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_md380",
+        "GeneralSettings_md380",
+        "MenuItems",
+        "RadioButtons",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts",
+        "GroupLists",
+        "Zones_md380",
+        "ScanLists_md380",
+        "Channels_md380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "MD-390",
+      "models": [
+        "MD390"
+      ],
+      "ext": "rdt",
+      "rdtSize": 262709,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_md390",
+        "GeneralSettings_md380",
+        "MenuItems",
+        "RadioButtons",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts",
+        "GroupLists",
+        "Zones_md380",
+        "ScanLists_md380",
+        "Channels_md380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "RT3-G",
+      "models": [
+        "MD390"
+      ],
+      "ext": "rdt",
+      "rdtSize": 262709,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_md390",
+        "GeneralSettings_md380",
+        "MenuItems",
+        "RadioButtons",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts",
+        "GroupLists",
+        "Zones_md380",
+        "ScanLists_md380",
+        "Channels_md380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "DJ-MD40",
+      "models": [
+        "DJ-MD40"
+      ],
+      "ext": "rdt",
+      "rdtSize": 262709,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_md40",
+        "GeneralSettings_md40",
+        "MenuItems",
+        "RadioButtons_md40",
+        "RadioButtons2",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts",
+        "GroupLists",
+        "Zones_md40",
+        "ScanLists_md40",
+        "Channels_md40"
+      ]
+    },
+    {
+      "type": "MD-UV380",
+      "models": [
+        "MD-UV380"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_uv380",
+        "MenuItems",
+        "RadioButtons_uv380",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_uv380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "MD-UV390",
+      "models": [
+        "MD-UV390"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_uv380",
+        "MenuItems",
+        "RadioButtons_uv380",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_uv380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "RT3S",
+      "models": [
+        "MD-UV390"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_uv380",
+        "MenuItems",
+        "RadioButtons_uv380",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_uv380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "MD-2017",
+      "models": [
+        "2017"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_md2017",
+        "MenuItems",
+        "RadioButtons_md2017",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_uv380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "MD-9600",
+      "models": [
+        "2017"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_md2017",
+        "MenuItems",
+        "RadioButtons_md2017",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_uv380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "RT90",
+      "models": [
+        "2017"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_md2017",
+        "MenuItems",
+        "RadioButtons_md2017",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_uv380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "RT82",
+      "models": [
+        "2017"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_md2017",
+        "MenuItems",
+        "RadioButtons_md2017",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_uv380",
+        "GPSSystems"
+      ]
+    },
+    {
+      "type": "RT84",
+      "models": [
+        "DM-1701"
+      ],
+      "ext": "rdt",
+      "rdtSize": 852533,
+      "headerSize": 549,
+      "trailerOffset": 262693,
+      "trailerSize": 16,
+      "recordTypes": [
+        "BasicInformation_uv380",
+        "GeneralSettings_rt84",
+        "MenuItems_noGPS",
+        "RadioButtons_rt84",
+        "ButtonDefinitions",
+        "OneTouch",
+        "NumberKey",
+        "TextMessages",
+        "PrivacySettings",
+        "Contacts_uv380",
+        "GroupLists",
+        "Zones_uv380",
+        "ScanLists_uv380",
+        "Channels_rt84"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "typeName": "Basic Information",
+      "type": "BasicInformation_md380",
+      "offset": 0,
+      "size": 8805,
+      "fieldTypes": [
+        "BiModel",
+        "BiFrequencyRange_md380",
+        "BiLowFrequency",
+        "BiHighFrequency",
+        "BiLastProgrammedTime",
+        "BiCpsVersion"
+      ]
+    },
+    {
+      "typeName": "Basic Information",
+      "type": "BasicInformation_md390",
+      "offset": 0,
+      "size": 8805,
+      "fieldTypes": [
+        "BiModel",
+        "BiFrequencyRange_md390",
+        "BiLowFrequency",
+        "BiHighFrequency",
+        "BiLastProgrammedTime",
+        "BiCpsVersion"
+      ]
+    },
+    {
+      "typeName": "Basic Information",
+      "type": "BasicInformation_md40",
+      "offset": 0,
+      "size": 8805,
+      "fieldTypes": [
+        "BiModel",
+        "BiFrequencyRange_md40",
+        "BiLowFrequency",
+        "BiHighFrequency",
+        "BiLastProgrammedTime",
+        "BiCpsVersion"
+      ]
+    },
+    {
+      "typeName": "Basic Information",
+      "type": "BasicInformation_uv380",
+      "offset": 0,
+      "size": 8805,
+      "fieldTypes": [
+        "BiModel",
+        "BiFrequencyRangeA",
+        "BiFrequencyRangeB",
+        "BiLowFrequencyA",
+        "BiHighFrequencyA",
+        "BiLowFrequencyB",
+        "BiHighFrequencyB",
+        "BiLastProgrammedTime",
+        "BiCpsVersion"
+      ]
+    },
+    {
+      "typeName": "General Settings",
+      "type": "GeneralSettings_md380",
+      "offset": 8805,
+      "size": 144,
+      "fieldTypes": [
+        "GsRadioName",
+        "GsRadioID",
+        "GsIntroScreen",
+        "GsIntroScreenLine1",
+        "GsIntroScreenLine2",
+        "GsSavePreamble",
+        "GsSaveModeReceive",
+        "GsDisableAllTones",
+        "GsChFreeIndicationTone",
+        "GsTalkPermitTone",
+        "GsKeypadTones",
+        "GsCallAlertToneDuration",
+        "GsScanDigitalHangTime",
+        "GsScanAnalogHangTime",
+        "GsLoneWorkerResponseTime",
+        "GsLoneWorkerReminderTime",
+        "GsPwAndLockEnable",
+        "GsPowerOnPassword",
+        "GsMonitorType",
+        "GsVoxSensitivity",
+        "GsTxPreambleDuration",
+        "GsRxLowBatteryInterval",
+        "GsPcProgPassword",
+        "GsRadioProgPassword",
+        "GsBacklightTime",
+        "GsSetKeypadLockTime",
+        "GsDisableAllLeds",
+        "GsGroupCallHangTime",
+        "GsPrivateCallHangTime"
+      ]
+    },
+    {
+      "typeName": "General Settings",
+      "type": "GeneralSettings_rt84",
+      "offset": 8805,
+      "size": 144,
+      "fieldTypes": [
+        "GsRadioName",
+        "GsRadioID",
+        "GsIntroScreen",
+        "GsIntroScreenLine1",
+        "GsIntroScreenLine2",
+        "GsSavePreamble",
+        "GsSaveModeReceive",
+        "GsDisableAllTones",
+        "GsChFreeIndicationTone",
+        "GsTalkPermitTone",
+        "GsCallAlertToneDuration",
+        "GsScanDigitalHangTime",
+        "GsScanAnalogHangTime",
+        "GsLoneWorkerResponseTime",
+        "GsLoneWorkerReminderTime",
+        "GsPwAndLockEnable",
+        "GsPowerOnPassword",
+        "GsCHVoiceAnnouncement",
+        "GsMonitorType",
+        "GsVoxSensitivity",
+        "GsTxPreambleDuration",
+        "GsRxLowBatteryInterval",
+        "GsChannelsHangTime",
+        "GsPcProgPassword",
+        "GsRadioProgPassword",
+        "GsBacklightTime",
+        "GsSetKeypadLockTime",
+        "GsFreqChannelMode_uv380",
+        "GsModeSelectA",
+        "GsModeSelectB",
+        "GsTimeZone",
+        "GsBacklightTime",
+        "GsDisableAllLeds",
+        "GsGroupCallMatch",
+        "GsPrivateCallMatch",
+        "GsGroupCallHangTime",
+        "GsPrivateCallHangTime"
+      ]
+    },
+    {
+      "typeName": "General Settings",
+      "type": "GeneralSettings_md40",
+      "offset": 8805,
+      "size": 144,
+      "fieldTypes": [
+        "GsRadioName",
+        "GsRadioID",
+        "GsIntroScreen",
+        "GsIntroScreenLine1",
+        "GsIntroScreenLine2",
+        "GsSavePreamble",
+        "GsSaveModeReceive",
+        "GsDisableAllTones",
+        "GsChFreeIndicationTone",
+        "GsTalkPermitTone",
+        "GsKeypadTones",
+        "GsCallAlertToneDuration",
+        "GsScanDigitalHangTime",
+        "GsScanAnalogHangTime",
+        "GsLoneWorkerResponseTime",
+        "GsLoneWorkerReminderTime",
+        "GsPwAndLockEnable",
+        "GsPowerOnPassword",
+        "GsMonitorType",
+        "GsVoxSensitivity",
+        "GsTxPreambleDuration",
+        "GsRxLowBatteryInterval",
+        "GsPcProgPassword",
+        "GsRadioProgPassword",
+        "GsFreqChannelMode",
+        "GsBacklightColor",
+        "GsModeSelect",
+        "GsLockUnlock",
+        "GsSetKeypadLockTime",
+        "GsDisableAllLeds",
+        "GsGroupCallHangTime",
+        "GsPrivateCallHangTime"
+      ]
+    },
+    {
+      "typeName": "General Settings",
+      "type": "GeneralSettings_uv380",
+      "offset": 8805,
+      "size": 144,
+      "fieldTypes": [
+        "GsRadioName",
+        "GsRadioID",
+        "GsIntroScreen",
+        "GsIntroScreenLine1",
+        "GsIntroScreenLine2",
+        "GsSavePreamble",
+        "GsCHVoiceAnnouncement",
+        "GsSaveModeReceive",
+        "GsDisableAllTones",
+        "GsChFreeIndicationTone",
+        "GsTalkPermitTone",
+        "GsKeypadTones",
+        "GsCallAlertToneDuration",
+        "GsScanDigitalHangTime",
+        "GsScanAnalogHangTime",
+        "GsLoneWorkerResponseTime",
+        "GsLoneWorkerReminderTime",
+        "GsPwAndLockEnable",
+        "GsPowerOnPassword",
+        "GsMonitorType",
+        "GsVoxSensitivity",
+        "GsTxPreambleDuration",
+        "GsRxLowBatteryInterval",
+        "GsChannelsHangTime",
+        "GsPcProgPassword",
+        "GsRadioProgPassword",
+        "GsSetKeypadLockTime",
+        "GsFreqChannelMode_uv380",
+        "GsModeSelectA",
+        "GsModeSelectB",
+        "GsTimeZone",
+        "GsBacklightTime",
+        "GsDisableAllLeds",
+        "GsGroupCallMatch",
+        "GsPrivateCallMatch",
+        "GsGroupCallHangTime",
+        "GsPrivateCallHangTime",
+        "GsRadioID1",
+        "GsRadioID2",
+        "GsRadioID3",
+        "GsMicLevel",
+        "GsTxMode",
+        "GsEditRadioID",
+        "GsPublicZone",
+        "GsEnableContactsCSV"
+      ]
+    },
+    {
+      "typeName": "General Settings",
+      "type": "GeneralSettings_md2017",
+      "offset": 8805,
+      "size": 144,
+      "fieldTypes": [
+        "GsRadioName",
+        "GsRadioID",
+        "GsIntroScreen",
+        "GsIntroScreenLine1",
+        "GsIntroScreenLine2",
+        "GsSavePreamble",
+        "GsCHVoiceAnnouncement",
+        "GsSaveModeReceive",
+        "GsDisableAllTones",
+        "GsChFreeIndicationTone",
+        "GsTalkPermitTone",
+        "GsKeypadTones",
+        "GsCallAlertToneDuration",
+        "GsScanDigitalHangTime",
+        "GsScanAnalogHangTime",
+        "GsLoneWorkerResponseTime",
+        "GsLoneWorkerReminderTime",
+        "GsPwAndLockEnable",
+        "GsPowerOnPassword",
+        "GsMonitorType",
+        "GsVoxSensitivity",
+        "GsTxPreambleDuration",
+        "GsRxLowBatteryInterval",
+        "GsChannelsHangTime",
+        "GsPcProgPassword",
+        "GsRadioProgPassword",
+        "GsSetKeypadLockTime",
+        "GsFreqChannelMode_uv380",
+        "GsModeSelectA",
+        "GsModeSelectB",
+        "GsTimeZone",
+        "GsBacklightTime",
+        "GsDisableAllLeds",
+        "GsGroupCallMatch",
+        "GsPrivateCallMatch",
+        "GsGroupCallHangTime",
+        "GsPrivateCallHangTime",
+        "GsRadioID1",
+        "GsRadioID2",
+        "GsRadioID3",
+        "GsMicLevel",
+        "GsTxMode",
+        "GsEditRadioID",
+        "GsPublicZone",
+        "GsEnableContactsCSV",
+        "GsMenuControl",
+        "GsTwoChannel"
+      ]
+    },
+    {
+      "typeName": "Menu Items",
+      "type": "MenuItems",
+      "offset": 8981,
+      "size": 5,
+      "fieldTypes": [
+        "MiHangTime",
+        "MiRadioDisable",
+        "MiRadioEnable",
+        "MiRemoteMonitor",
+        "MiRadioCheck",
+        "MiManualDial",
+        "MiEdit",
+        "MiCallAlert",
+        "MiTextMessage",
+        "MiToneOrAlert",
+        "MiTalkaround",
+        "MiOutgoingRadio",
+        "MiAnswered",
+        "MiMissed",
+        "MiEditList",
+        "MiScan",
+        "MiProgramKey",
+        "MiVox",
+        "MiSquelch",
+        "MiLedIndicator",
+        "MiKeyboardLock",
+        "MiIntroScreen",
+        "MiBacklight",
+        "MiPower",
+        "MiGps",
+        "MiProgramRadio",
+        "MiDisplayMode",
+        "MiPasswordAndLock"
+      ]
+    },
+    {
+      "typeName": "Menu Items",
+      "type": "MenuItems_noGPS",
+      "offset": 8981,
+      "size": 5,
+      "fieldTypes": [
+        "MiHangTime",
+        "MiRadioDisable",
+        "MiRadioEnable",
+        "MiRemoteMonitor",
+        "MiRadioCheck",
+        "MiManualDial",
+        "MiEdit",
+        "MiCallAlert",
+        "MiTextMessage",
+        "MiToneOrAlert",
+        "MiTalkaround",
+        "MiOutgoingRadio",
+        "MiAnswered",
+        "MiMissed",
+        "MiEditList",
+        "MiScan",
+        "MiProgramKey",
+        "MiVox",
+        "MiSquelch",
+        "MiLedIndicator",
+        "MiKeyboardLock",
+        "MiIntroScreen",
+        "MiBacklight",
+        "MiPower",
+        "MiProgramRadio",
+        "MiDisplayMode",
+        "MiPasswordAndLock"
+      ]
+    },
+    {
+      "typeName": "Radio Buttons",
+      "type": "RadioButtons",
+      "offset": 8999,
+      "size": 1,
+      "max": 4,
+      "fieldTypes": [
+        "RbButton"
+      ],
+      "names": [
+        "Side Button 1 Short Press",
+        "Side Button 1 Long Press",
+        "Side Button 2 Short Press",
+        "Side Button 2 Long Press"
+      ]
+    },
+    {
+      "typeName": "Radio Buttons",
+      "type": "RadioButtons_rt84",
+      "offset": 8999,
+      "size": 1,
+      "max": 8,
+      "fieldTypes": [
+        "RbButton"
+      ],
+      "names": [
+        "Side Button 1 Short Press",
+        "Side Button 1 Long Press",
+        "Side Button 2 Short Press",
+        "Side Button 2 Long Press",
+        "P1 Short Press",
+        "P1 Long Press",
+        "P2 Short Press",
+        "P2 Long Press"
+      ]
+    },
+    {
+      "typeName": "Radio Buttons",
+      "type": "RadioButtons_md40",
+      "offset": 8997,
+      "size": 1,
+      "max": 6,
+      "fieldTypes": [
+        "RbButton_md40"
+      ],
+      "names": [
+        "Top Button 1 Short Press",
+        "Top Button 1 Long Press",
+        "Side Button 1 Short Press",
+        "Side Button 1 Long Press",
+        "Side Button 2 Short Press",
+        "Side Button 2 Long Press"
+      ]
+    },
+    {
+      "typeName": "Radio Buttons",
+      "type": "RadioButtons_uv380",
+      "offset": 8999,
+      "size": 1,
+      "max": 4,
+      "fieldTypes": [
+        "RbButton_uv380"
+      ],
+      "names": [
+        "Side Button 1 Short Press",
+        "Side Button 1 Long Press",
+        "Side Button 2 Short Press",
+        "Side Button 2 Long Press"
+      ]
+    },
+    {
+      "typeName": "Radio Buttons",
+      "type": "RadioButtons_md2017",
+      "offset": 8997,
+      "size": 1,
+      "max": 12,
+      "fieldTypes": [
+        "RbButton_uv380"
+      ],
+      "names": [
+        "Top Button 1 Short Press",
+        "Top Button 1 Long Press",
+        "Side Button 1 Short Press",
+        "Side Button 1 Long Press",
+        "Side Button 2 Short Press",
+        "Side Button 2 Long Press",
+        "Side Button 3 Short Press",
+        "Side Button 3 Long Press",
+        "P1 Short Press",
+        "P1 Long Press",
+        "P2 Short Press",
+        "P2 Long Press"
+      ]
+    },
+    {
+      "typeName": "Button Definitions",
+      "type": "ButtonDefinitions",
+      "offset": 9014,
+      "size": 1,
+      "fieldTypes": [
+        "BdLongPressDuration"
+      ]
+    },
+    {
+      "typeName": "One Touch",
+      "type": "OneTouch",
+      "offset": 9017,
+      "size": 4,
+      "max": 6,
+      "fieldTypes": [
+        "OtMode",
+        "OtCallType",
+        "OtDTMF",
+        "OtTextMessage",
+        "OtEncode",
+        "OtCall"
+      ]
+    },
+    {
+      "typeName": "Number Key",
+      "type": "NumberKey",
+      "offset": 9041,
+      "size": 2,
+      "max": 10,
+      "namePrefix": "Number Key ",
+      "fieldTypes": [
+        "NkContact"
+      ]
+    },
+    {
+      "typeName": "Radio Buttons",
+      "type": "RadioButtons2",
+      "offset": 9061,
+      "size": 1,
+      "max": 12,
+      "fieldTypes": [
+        "RbButton_md40"
+      ],
+      "names": [
+        "Func + Key 0",
+        "Func + Key 1",
+        "Func + Key 2",
+        "Func + Key 3",
+        "Func + Key 4",
+        "Func + Key 5",
+        "Func + Key 6",
+        "Func + Key 7",
+        "Func + Key 8",
+        "Func + Key 9",
+        "Func + Key #",
+        "Func + Key *"
+      ]
+    },
+    {
+      "typeName": "Text Messages",
+      "type": "TextMessages",
+      "offset": 9125,
+      "size": 288,
+      "max": 50,
+      "delDesc": {
+        "offset": 0,
+        "size": 8,
+        "value": 0
+      },
+      "namePrefix": "Message ",
+      "fieldTypes": [
+        "TmTextMessage"
+      ]
+    },
+    {
+      "typeName": "Privacy Settings",
+      "type": "PrivacySettings",
+      "offset": 23525,
+      "size": 176,
+      "fieldTypes": [
+        "PsEnhancedKey",
+        "PsBasicKey"
+      ]
+    },
+    {
+      "typeName": "Contacts",
+      "type": "Contacts",
+      "offset": 24997,
+      "size": 36,
+      "max": 1000,
+      "delDesc": {
+        "offset": 3,
+        "size": 1,
+        "value": 192
+      },
+      "fieldTypes": [
+        "DcName",
+        "DcCallID",
+        "DcCallType",
+        "DcCallReceiveTone"
+      ]
+    },
+    {
+      "typeName": "Contacts",
+      "type": "Contacts_uv380",
+      "offset": 459317,
+      "size": 36,
+      "max": 10000,
+      "delDesc": {
+        "offset": 3,
+        "size": 1,
+        "value": 192
+      },
+      "fieldTypes": [
+        "DcName",
+        "DcCallID",
+        "DcCallType",
+        "DcCallReceiveTone"
+      ]
+    },
+    {
+      "typeName": "RX Group Lists",
+      "type": "GroupLists",
+      "offset": 60997,
+      "size": 96,
+      "max": 250,
+      "delDesc": {
+        "offset": 0,
+        "size": 1,
+        "value": 0
+      },
+      "fieldTypes": [
+        "GlName",
+        "GlContact"
+      ]
+    },
+    {
+      "typeName": "Zones",
+      "type": "Zones_md380",
+      "offset": 84997,
+      "size": 64,
+      "max": 250,
+      "delDesc": {
+        "offset": 0,
+        "size": 1,
+        "value": 0
+      },
+      "fieldTypes": [
+        "ZiName",
+        "ZiChannel_md380"
+      ]
+    },
+    {
+      "typeName": "Zones",
+      "type": "Zones_md40",
+      "offset": 84997,
+      "size": 64,
+      "max": 250,
+      "delDesc": {
+        "offset": 0,
+        "size": 1,
+        "value": 0
+      },
+      "fieldTypes": [
+        "ZiName",
+        "ZiChannel_md40"
+      ]
+    },
+    {
+      "typeName": "Zones",
+      "type": "Zones_uv380",
+      "offset": 84997,
+      "size": 64,
+      "max": 250,
+      "delDesc": {
+        "offset": 0,
+        "size": 1,
+        "value": 0
+      },
+      "fieldTypes": [
+        "ZiName",
+        "ZiChannelA_uv380",
+        "ZiChannelB_uv380"
+      ]
+    },
+    {
+      "typeName": "Scan Lists",
+      "type": "ScanLists_md380",
+      "offset": 100997,
+      "size": 104,
+      "max": 250,
+      "delDesc": {
+        "offset": 0,
+        "size": 1,
+        "value": 0
+      },
+      "fieldTypes": [
+        "SlName",
+        "SlPriorityChannel1_md380",
+        "SlPriorityChannel2_md380",
+        "SlTxDesignatedChannel_md380",
+        "SlSignallingHoldTime",
+        "SlPrioritySampleTime",
+        "SlChannel_md380"
+      ]
+    },
+    {
+      "typeName": "Scan Lists",
+      "type": "ScanLists_md40",
+      "offset": 100997,
+      "size": 104,
+      "max": 250,
+      "delDesc": {
+        "offset": 0,
+        "size": 1,
+        "value": 0
+      },
+      "fieldTypes": [
+        "SlName",
+        "SlPriorityChannel1_md40",
+        "SlPriorityChannel2_md40",
+        "SlTxDesignatedChannel_md40",
+        "SlSignallingHoldTime",
+        "SlPrioritySampleTime",
+        "SlChannel_md40"
+      ]
+    },
+    {
+      "typeName": "Scan Lists",
+      "type": "ScanLists_uv380",
+      "offset": 100997,
+      "size": 104,
+      "max": 250,
+      "delDesc": {
+        "offset": 0,
+        "size": 1,
+        "value": 0
+      },
+      "fieldTypes": [
+        "SlName",
+        "SlPriorityChannel1_md40",
+        "SlPriorityChannel2_md40",
+        "SlTxDesignatedChannel_md40",
+        "SlSignallingHoldTime",
+        "SlPrioritySampleTime",
+        "SlChannel_md40"
+      ]
+    },
+    {
+      "typeName": "Channels",
+      "type": "Channels_md380",
+      "offset": 127013,
+      "size": 64,
+      "max": 1000,
+      "delDesc": {
+        "offset": 16,
+        "size": 1,
+        "value": 255
+      },
+      "fieldTypes": [
+        "CiName",
+        "CiRxFrequency",
+        "CiTxFrequencyOffset",
+        "CiChannelMode",
+        "CiBandwidth",
+        "CiScanList_md380",
+        "CiSquelch",
+        "CiRxRefFrequency",
+        "CiTxRefFrequency",
+        "CiTot",
+        "CiTotRekeyDelay",
+        "CiPower",
+        "CiAdmitCriteria",
+        "CiAutoscan",
+        "CiRxOnly",
+        "CiLoneWorker",
+        "CiVox",
+        "CiAllowTalkaround",
+        "CiPrivateCallConfirmed",
+        "CiEmergencyAlarmAck",
+        "CiDataCallConfirmed",
+        "CiCompressedUdpDataHeader",
+        "CiTalkaround",
+        "CiEmergencySystem",
+        "CiContactName",
+        "CiGroupList",
+        "CiColorCode",
+        "CiRepeaterSlot",
+        "CiPrivacy",
+        "CiPrivacyNumber",
+        "CiDisplayPTTID",
+        "CiCtcssEncode",
+        "CiTxSignallingSystem",
+        "CiQtReverse",
+        "CiReverseBurst",
+        "CiCtcssDecode",
+        "CiRxSignallingSystem",
+        "CiDecode1",
+        "CiDecode2",
+        "CiDecode3",
+        "CiDecode4",
+        "CiDecode5",
+        "CiDecode6",
+        "CiDecode7",
+        "CiDecode8",
+        "CiReceiveGPSInfo",
+        "CiSendGPSInfo",
+        "CiGPSSystem",
+        "CiInCallCriteria"
+      ]
+    },
+    {
+      "typeName": "Channels",
+      "type": "Channels_md40",
+      "offset": 127013,
+      "size": 64,
+      "max": 1000,
+      "delDesc": {
+        "offset": 16,
+        "size": 1,
+        "value": 255
+      },
+      "fieldTypes": [
+        "CiName",
+        "CiRxFrequency",
+        "CiTxFrequencyOffset",
+        "CiChannelMode",
+        "CiBandwidth",
+        "CiScanList_md40",
+        "CiSquelch",
+        "CiRxRefFrequency",
+        "CiTxRefFrequency",
+        "CiTot",
+        "CiTotRekeyDelay",
+        "CiPower",
+        "CiAdmitCriteria",
+        "CiAutoscan",
+        "CiRxOnly",
+        "CiLoneWorker",
+        "CiVox",
+        "CiAllowTalkaround",
+        "CiPrivateCallConfirmed",
+        "CiEmergencyAlarmAck",
+        "CiDataCallConfirmed",
+        "CiCompressedUdpDataHeader",
+        "CiTalkaround",
+        "CiEmergencySystem",
+        "CiContactName",
+        "CiGroupList",
+        "CiColorCode",
+        "CiRepeaterSlot",
+        "CiPrivacy",
+        "CiPrivacyNumber",
+        "CiDisplayPTTID",
+        "CiCtcssEncode",
+        "CiTxSignallingSystem",
+        "CiQtReverse",
+        "CiReverseBurst",
+        "CiCtcssDecode",
+        "CiRxSignallingSystem",
+        "CiDecode1",
+        "CiDecode2",
+        "CiDecode3",
+        "CiDecode4",
+        "CiDecode5",
+        "CiDecode6",
+        "CiDecode7",
+        "CiDecode8"
+      ]
+    },
+    {
+      "typeName": "Channels",
+      "type": "Channels_uv380",
+      "offset": 262709,
+      "size": 64,
+      "max": 3000,
+      "delDesc": {
+        "offset": 16,
+        "size": 1,
+        "value": 255
+      },
+      "fieldTypes": [
+        "CiName",
+        "CiRxFrequency",
+        "CiTxFrequencyOffset",
+        "CiChannelMode",
+        "CiBandwidth",
+        "CiScanList_md40",
+        "CiSquelch_uv380",
+        "CiRxRefFrequency",
+        "CiTxRefFrequency",
+        "CiTot",
+        "CiTotRekeyDelay",
+        "CiPower_uv380",
+        "CiAdmitCriteria",
+        "CiAutoscan",
+        "CiRxOnly",
+        "CiLoneWorker",
+        "CiVox",
+        "CiAllowTalkaround",
+        "CiSendGPSInfo",
+        "CiReceiveGPSInfo",
+        "CiPrivateCallConfirmed",
+        "CiTalkaround",
+        "CiEmergencyAlarmAck",
+        "CiDataCallConfirmed",
+        "CiDCDMSwitch",
+        "CiLeaderMS",
+        "CiEmergencySystem",
+        "CiContactName",
+        "CiGroupList",
+        "CiColorCode",
+        "CiRepeaterSlot",
+        "CiPrivacy",
+        "CiPrivacyNumber",
+        "CiGPSSystem",
+        "CiInCallCriteria",
+        "CiDisplayPTTID",
+        "CiCtcssEncode",
+        "CiTxSignallingSystem",
+        "CiQtReverse",
+        "CiReverseBurst",
+        "CiCtcssDecode",
+        "CiRxSignallingSystem",
+        "CiDecode1",
+        "CiDecode2",
+        "CiDecode3",
+        "CiDecode4",
+        "CiDecode5",
+        "CiDecode6",
+        "CiDecode7",
+        "CiDecode8"
+      ]
+    },
+    {
+      "typeName": "Channels",
+      "type": "Channels_rt84",
+      "offset": 262709,
+      "size": 64,
+      "max": 3000,
+      "delDesc": {
+        "offset": 16,
+        "size": 1,
+        "value": 255
+      },
+      "fieldTypes": [
+        "CiName",
+        "CiRxFrequency",
+        "CiTxFrequencyOffset",
+        "CiChannelMode",
+        "CiBandwidth",
+        "CiScanList_md40",
+        "CiSquelch",
+        "CiRxRefFrequency",
+        "CiTxRefFrequency",
+        "CiTot",
+        "CiTotRekeyDelay",
+        "CiPower_uv380",
+        "CiAdmitCriteria",
+        "CiAutoscan",
+        "CiRxOnly",
+        "CiLoneWorker",
+        "CiVox",
+        "CiAllowTalkaround",
+        "CiPrivateCallConfirmed",
+        "CiTalkaround",
+        "CiEmergencyAlarmAck",
+        "CiDataCallConfirmed",
+        "CiAllowInterrupt",
+        "CiDCDMSwitch",
+        "CiLeaderMS",
+        "CiEmergencySystem",
+        "CiContactName",
+        "CiGroupList",
+        "CiColorCode",
+        "CiRepeaterSlot",
+        "CiPrivacy",
+        "CiPrivacyNumber",
+        "CiInCallCriteria",
+        "CiDisplayPTTID",
+        "CiCtcssEncode",
+        "CiTxSignallingSystem",
+        "CiDQTTurnoffFreq",
+        "CiQtReverse",
+        "CiReverseBurst",
+        "CiCtcssDecode",
+        "CiRxSignallingSystem",
+        "CiDecode1",
+        "CiDecode2",
+        "CiDecode3",
+        "CiDecode4",
+        "CiDecode5",
+        "CiDecode6",
+        "CiDecode7",
+        "CiDecode8"
+      ]
+    },
+    {
+      "typeName": "GPS Systems",
+      "type": "GPSSystems",
+      "offset": 257637,
+      "size": 16,
+      "max": 16,
+      "namePrefix": "GPS ",
+      "fieldTypes": [
+        "GpGPSRevertChannel",
+        "GpGPSDefaultReportInterval",
+        "GpDestinationID"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "typeName": "Model Name",
+      "type": "BiModel",
+      "bitOffset": 2344,
+      "bitSize": 64,
+      "valueType": "ascii"
+    },
+    {
+      "typeName": "Frequency Range (MHz)",
+      "type": "BiFrequencyRange_md380",
+      "bitOffset": 2480,
+      "bitSize": 8,
+      "valueType": "iStrings",
+      "strings": [
+        "136-174",
+        "350-400",
+        "400-480",
+        "450-520"
+      ]
+    },
+    {
+      "typeName": "Frequency Range (MHz)",
+      "type": "BiFrequencyRange_md390",
+      "bitOffset": 2480,
+      "bitSize": 8,
+      "valueType": "iStrings",
+      "strings": [
+        "136-174",
+        "350-400",
+        "400-480",
+        "450-520"
+      ]
+    },
+    {
+      "typeName": "Frequency Range (MHz)",
+      "type": "BiFrequencyRange_md40",
+      "bitOffset": 2480,
+      "bitSize": 8,
+      "valueType": "iStrings",
+      "strings": [
+        "MD40 400-480",
+        "MD40HT 420-450",
+        "MD40HE 430-440",
+        "MD40T 400-480"
+      ]
+    },
+    {
+      "typeName": "Frequency Range A (MHz)",
+      "type": "BiFrequencyRangeA",
+      "bitOffset": 2480,
+      "bitSize": 8,
+      "valueType": "iStrings",
+      "strings": [
+        "136-174",
+        "350-400",
+        "400-480",
+        "450-520"
+      ]
+    },
+    {
+      "typeName": "Frequency Range B (MHz)",
+      "type": "BiFrequencyRangeB",
+      "bitOffset": 2488,
+      "bitSize": 8,
+      "valueType": "iStrings",
+      "strings": [
+        "136-174",
+        "350-400",
+        "400-480",
+        "450-520"
+      ]
+    },
+    {
+      "typeName": "Low Frequency",
+      "type": "BiLowFrequency",
+      "bitOffset": 2504,
+      "bitSize": 16,
+      "valueType": "biFrequency"
+    },
+    {
+      "typeName": "High Frequency",
+      "type": "BiHighFrequency",
+      "bitOffset": 2520,
+      "bitSize": 16,
+      "valueType": "biFrequency"
+    },
+    {
+      "typeName": "Low Frequency A",
+      "type": "BiLowFrequencyA",
+      "bitOffset": 2504,
+      "bitSize": 16,
+      "valueType": "biFrequency"
+    },
+    {
+      "typeName": "High Frequency A",
+      "type": "BiHighFrequencyA",
+      "bitOffset": 2520,
+      "bitSize": 16,
+      "valueType": "biFrequency"
+    },
+    {
+      "typeName": "Low Frequency B",
+      "type": "BiLowFrequencyB",
+      "bitOffset": 2536,
+      "bitSize": 16,
+      "valueType": "biFrequency"
+    },
+    {
+      "typeName": "High Frequency B",
+      "type": "BiHighFrequencyB",
+      "bitOffset": 2552,
+      "bitSize": 16,
+      "valueType": "biFrequency"
+    },
+    {
+      "typeName": "Last Programmed Time",
+      "type": "BiLastProgrammedTime",
+      "bitOffset": 69936,
+      "bitSize": 56,
+      "valueType": "timeStamp"
+    },
+    {
+      "typeName": "CPS Version",
+      "type": "BiCpsVersion",
+      "bitOffset": 69992,
+      "bitSize": 32,
+      "defaultValue": "1001",
+      "valueType": "cpsVersion"
+    },
+    {
+      "typeName": "Intro Screen Line 1",
+      "type": "GsIntroScreenLine1",
+      "bitOffset": 0,
+      "bitSize": 160,
+      "valueType": "introLine"
+    },
+    {
+      "typeName": "Intro Screen Line 2",
+      "type": "GsIntroScreenLine2",
+      "bitOffset": 160,
+      "bitSize": 160,
+      "valueType": "introLine"
+    },
+    {
+      "typeName": "Tx Mode",
+      "type": "GsTxMode",
+      "bitOffset": 512,
+      "bitSize": 2,
+      "defaultValue": "Designated CH + Hand CH",
+      "valueType": "iStrings",
+      "strings": [
+        "Last Call CH",
+        "Last Call + Hand CH",
+        "Designated CH",
+        "Designated CH + Hand CH"
+      ]
+    },
+    {
+      "typeName": "Monitor Type",
+      "type": "GsMonitorType",
+      "bitOffset": 515,
+      "bitSize": 1,
+      "defaultValue": "Open Squelch",
+      "valueType": "iStrings",
+      "strings": [
+        "Silent",
+        "Open Squelch"
+      ]
+    },
+    {
+      "typeName": "Disable All LEDS",
+      "type": "GsDisableAllLeds",
+      "bitOffset": 517,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Talk Permit Tone",
+      "type": "GsTalkPermitTone",
+      "bitOffset": 520,
+      "bitSize": 2,
+      "defaultValue": "None",
+      "valueType": "iStrings",
+      "strings": [
+        "None",
+        "Digital",
+        "Analog",
+        "Digital and Analog"
+      ]
+    },
+    {
+      "typeName": "Password And Lock Enable",
+      "type": "GsPwAndLockEnable",
+      "bitOffset": 522,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff",
+      "enable": {
+        "value": "On",
+        "enables": [
+          "GsPowerOnPassword"
+        ]
+      }
+    },
+    {
+      "typeName": "Channel Free Indication Tone",
+      "type": "GsChFreeIndicationTone",
+      "bitOffset": 523,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Disable All Tones",
+      "type": "GsDisableAllTones",
+      "bitOffset": 525,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Save Mode Receive",
+      "type": "GsSaveModeReceive",
+      "bitOffset": 526,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Save Preamble",
+      "type": "GsSavePreamble",
+      "bitOffset": 527,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Enable Contacts CSV",
+      "type": "GsEnableContactsCSV",
+      "bitOffset": 529,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "CH Voice Announcement",
+      "type": "GsCHVoiceAnnouncement",
+      "bitOffset": 534,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Keypad Tones",
+      "type": "GsKeypadTones",
+      "bitOffset": 530,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Intro Screen",
+      "type": "GsIntroScreen",
+      "bitOffset": 531,
+      "bitSize": 1,
+      "defaultValue": "Character String",
+      "valueType": "iStrings",
+      "strings": [
+        "Character String",
+        "Picture"
+      ]
+    },
+    {
+      "typeName": "Lock/Unlock",
+      "type": "GsLockUnlock",
+      "bitOffset": 539,
+      "bitSize": 1,
+      "defaultValue": "Unlock",
+      "valueType": "iStrings",
+      "strings": [
+        "Unlock",
+        "Lock"
+      ]
+    },
+    {
+      "typeName": "Freq/Channel Mode",
+      "type": "GsFreqChannelMode",
+      "bitOffset": 540,
+      "bitSize": 1,
+      "defaultValue": "Channel",
+      "valueType": "iStrings",
+      "strings": [
+        "Frequency",
+        "Channel"
+      ],
+      "enable": {
+        "value": "Frequency",
+        "enables": [
+          "GsModeSelect"
+        ],
+        "disables": [
+          "GsLockUnlock"
+        ]
+      }
+    },
+    {
+      "typeName": "Mode Select",
+      "type": "GsModeSelect",
+      "bitOffset": 541,
+      "bitSize": 1,
+      "defaultValue": "Memory",
+      "valueType": "iStrings",
+      "strings": [
+        "VFO",
+        "Memory"
+      ]
+    },
+    {
+      "typeName": "Mode Select A",
+      "type": "GsModeSelectA",
+      "bitOffset": 541,
+      "bitSize": 1,
+      "defaultValue": "Memory",
+      "valueType": "iStrings",
+      "strings": [
+        "VFO",
+        "Memory"
+      ]
+    },
+    {
+      "typeName": "Mode Select B",
+      "type": "GsModeSelectB",
+      "bitOffset": 536,
+      "bitSize": 1,
+      "defaultValue": "Memory",
+      "valueType": "iStrings",
+      "strings": [
+        "VFO",
+        "Memory"
+      ]
+    },
+    {
+      "typeName": "Backlight Color",
+      "type": "GsBacklightColor",
+      "bitOffset": 542,
+      "bitSize": 2,
+      "defaultValue": "White",
+      "valueType": "iStrings",
+      "strings": [
+        "Off",
+        "Orange",
+        "White",
+        "Sakura"
+      ]
+    },
+    {
+      "typeName": "Radio ID",
+      "type": "GsRadioID",
+      "bitOffset": 544,
+      "bitSize": 24,
+      "defaultValue": "1234",
+      "valueType": "callID"
+    },
+    {
+      "typeName": "Tx Preamble Duration (mS)",
+      "type": "GsTxPreambleDuration",
+      "bitOffset": 576,
+      "bitSize": 8,
+      "defaultValue": "600",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 144,
+        "scale": 60
+      }
+    },
+    {
+      "typeName": "Group Call Hang Time (mS)",
+      "type": "GsGroupCallHangTime",
+      "bitOffset": 584,
+      "bitSize": 8,
+      "defaultValue": "3000",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 70,
+        "scale": 100,
+        "interval": 5
+      }
+    },
+    {
+      "typeName": "Private Call Hang Time (mS)",
+      "type": "GsPrivateCallHangTime",
+      "bitOffset": 592,
+      "bitSize": 8,
+      "defaultValue": "4000",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 70,
+        "scale": 100,
+        "interval": 5
+      }
+    },
+    {
+      "typeName": "VOX Sensitivity",
+      "type": "GsVoxSensitivity",
+      "bitOffset": 600,
+      "bitSize": 8,
+      "defaultValue": "3",
+      "valueType": "spanList",
+      "span": {
+        "min": 1,
+        "max": 10
+      }
+    },
+    {
+      "typeName": "Rx Low Battery Interval (S)",
+      "type": "GsRxLowBatteryInterval",
+      "bitOffset": 624,
+      "bitSize": 8,
+      "defaultValue": "3",
+      "valueType": "span",
+      "span": {
+        "min": 0,
+        "max": 127,
+        "scale": 5
+      }
+    },
+    {
+      "typeName": "Call Alert Tone Duration (S)",
+      "type": "GsCallAlertToneDuration",
+      "bitOffset": 632,
+      "bitSize": 8,
+      "defaultValue": "Continue",
+      "valueType": "span",
+      "span": {
+        "min": 0,
+        "max": 240,
+        "scale": 5,
+        "minString": "Continue"
+      }
+    },
+    {
+      "typeName": "Lone Worker Response Time (min)",
+      "type": "GsLoneWorkerResponseTime",
+      "bitOffset": 640,
+      "bitSize": 8,
+      "defaultValue": "1",
+      "valueType": "span",
+      "span": {
+        "min": 1,
+        "max": 255
+      }
+    },
+    {
+      "typeName": "Lone Worker Reminder Time (S)",
+      "type": "GsLoneWorkerReminderTime",
+      "bitOffset": 648,
+      "bitSize": 8,
+      "defaultValue": "10",
+      "valueType": "span",
+      "span": {
+        "min": 1,
+        "max": 255
+      }
+    },
+    {
+      "typeName": "Scan Digital Hang Time (mS)",
+      "type": "GsScanDigitalHangTime",
+      "bitOffset": 664,
+      "bitSize": 8,
+      "defaultValue": "1000",
+      "valueType": "spanList",
+      "span": {
+        "min": 5,
+        "max": 100,
+        "scale": 100,
+        "interval": 5
+      }
+    },
+    {
+      "typeName": "Scan Analog Hang Time (mS)",
+      "type": "GsScanAnalogHangTime",
+      "bitOffset": 672,
+      "bitSize": 8,
+      "defaultValue": "1000",
+      "valueType": "spanList",
+      "span": {
+        "min": 5,
+        "max": 100,
+        "scale": 100,
+        "interval": 5
+      }
+    },
+    {
+      "typeName": "Backlight Time (S)",
+      "type": "GsBacklightTime",
+      "bitOffset": 686,
+      "bitSize": 2,
+      "defaultValue": "Always",
+      "valueType": "iStrings",
+      "strings": [
+        "Always",
+        "5",
+        "10",
+        "15"
+      ]
+    },
+    {
+      "typeName": "Set Keypad Lock Time (S)",
+      "type": "GsSetKeypadLockTime",
+      "bitOffset": 688,
+      "bitSize": 8,
+      "valueType": "indexedStrings",
+      "defaultValue": "Manual",
+      "indexedStrings": [
+        {
+          "index": 5,
+          "string": "5"
+        },
+        {
+          "index": 10,
+          "string": "10"
+        },
+        {
+          "index": 15,
+          "string": "15"
+        },
+        {
+          "index": 255,
+          "string": "Manual"
+        }
+      ]
+    },
+    {
+      "typeName": "Freq/Channel Mode",
+      "type": "GsFreqChannelMode_uv380",
+      "bitOffset": 696,
+      "bitSize": 8,
+      "defaultValue": "Channel",
+      "valueType": "indexedStrings",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Frequency"
+        },
+        {
+          "index": 255,
+          "string": "Channel"
+        }
+      ],
+      "enable": {
+        "value": "VFO",
+        "enables": [
+          "GsModeSelectA",
+          "GsModeSelectB"
+        ],
+        "disables": [
+          "GsLockUnlock"
+        ]
+      }
+    },
+    {
+      "typeName": "Power On Password",
+      "type": "GsPowerOnPassword",
+      "bitOffset": 704,
+      "bitSize": 32,
+      "defaultValue": "00000000",
+      "valueType": "radioPassword"
+    },
+    {
+      "typeName": "Radio Programming Password",
+      "type": "GsRadioProgPassword",
+      "bitOffset": 736,
+      "bitSize": 32,
+      "defaultValue": "",
+      "valueType": "radioProgPassword"
+    },
+    {
+      "typeName": "PC Programming Password",
+      "type": "GsPcProgPassword",
+      "bitOffset": 768,
+      "bitSize": 64,
+      "defaultValue": "",
+      "valueType": "pcPassword"
+    },
+    {
+      "typeName": "Time Zone",
+      "type": "GsTimeZone",
+      "bitOffset": 856,
+      "bitSize": 5,
+      "defaultValue": "UTC+8:00",
+      "valueType": "iStrings",
+      "strings": [
+        "UTC-12:00",
+        "UTC-11:00",
+        "UTC-10:00",
+        "UTC-9:00",
+        "UTC-8:00",
+        "UTC-7:00",
+        "UTC-6:00",
+        "UTC-5:00",
+        "UTC-4:00",
+        "UTC-3:00",
+        "UTC-2:00",
+        "UTC-1:00",
+        "UTC+0:00",
+        "UTC+1:00",
+        "UTC+2:00",
+        "UTC+3:00",
+        "UTC+4:00",
+        "UTC+5:00",
+        "UTC+6:00",
+        "UTC+7:00",
+        "UTC+8:00",
+        "UTC+9:00",
+        "UTC+10:00",
+        "UTC+11:00",
+        "UTC+12:00"
+      ]
+    },
+    {
+      "typeName": "Private Call Match",
+      "type": "GsPrivateCallMatch",
+      "bitOffset": 862,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Group Call Match",
+      "type": "GsGroupCallMatch",
+      "bitOffset": 863,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Radio Name",
+      "type": "GsRadioName",
+      "bitOffset": 896,
+      "bitSize": 256,
+      "defaultValue": "",
+      "valueType": "radioName"
+    },
+    {
+      "typeName": "Channels Hang Time (mS)",
+      "type": "GsChannelsHangTime",
+      "bitOffset": 1152,
+      "bitSize": 8,
+      "defaultValue": "3000",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 70,
+        "scale": 100,
+        "interval": 5
+      }
+    },
+    {
+      "typeName": "Public Zone",
+      "type": "GsPublicZone",
+      "bitOffset": 1173,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Radio ID 1",
+      "type": "GsRadioID1",
+      "bitOffset": 1184,
+      "bitSize": 24,
+      "defaultValue": "1",
+      "valueType": "callID"
+    },
+    {
+      "typeName": "Radio ID 2",
+      "type": "GsRadioID2",
+      "bitOffset": 1216,
+      "bitSize": 24,
+      "defaultValue": "2",
+      "valueType": "callID"
+    },
+    {
+      "typeName": "Radio ID 3",
+      "type": "GsRadioID3",
+      "bitOffset": 1248,
+      "bitSize": 24,
+      "defaultValue": "3",
+      "valueType": "callID"
+    },
+    {
+      "typeName": "Edit Radio ID",
+      "type": "GsEditRadioID",
+      "bitOffset": 1281,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "MIC Level",
+      "type": "GsMicLevel",
+      "bitOffset": 1282,
+      "bitSize": 3,
+      "defaultValue": "3",
+      "valueType": "iStrings",
+      "strings": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "typeName": "Two Channel",
+      "type": "GsTwoChannel",
+      "bitOffset": 1302,
+      "bitSize": 1,
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Menu Control",
+      "type": "GsMenuControl",
+      "bitOffset": 1303,
+      "bitSize": 1,
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Hang Time",
+      "type": "MiHangTime",
+      "bitOffset": 0,
+      "bitSize": 8,
+      "defaultValue": "10",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 30,
+        "minString": "Hang"
+      }
+    },
+    {
+      "typeName": "Radio Disable",
+      "type": "MiRadioDisable",
+      "bitOffset": 8,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Radio Enable",
+      "type": "MiRadioEnable",
+      "bitOffset": 9,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Remote Monitor",
+      "type": "MiRemoteMonitor",
+      "bitOffset": 10,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Radio Check",
+      "type": "MiRadioCheck",
+      "bitOffset": 11,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Manual Dial",
+      "type": "MiManualDial",
+      "bitOffset": 12,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Edit",
+      "type": "MiEdit",
+      "bitOffset": 13,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Call Alert",
+      "type": "MiCallAlert",
+      "bitOffset": 14,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Text Messsage",
+      "type": "MiTextMessage",
+      "bitOffset": 15,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Tone Or Alert",
+      "type": "MiToneOrAlert",
+      "bitOffset": 16,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Talkaround",
+      "type": "MiTalkaround",
+      "bitOffset": 17,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Outgoing Radio",
+      "type": "MiOutgoingRadio",
+      "bitOffset": 18,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Answered",
+      "type": "MiAnswered",
+      "bitOffset": 19,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Missed",
+      "type": "MiMissed",
+      "bitOffset": 20,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Edit List",
+      "type": "MiEditList",
+      "bitOffset": 21,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Scan",
+      "type": "MiScan",
+      "bitOffset": 22,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Program Key",
+      "type": "MiProgramKey",
+      "bitOffset": 23,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "VOX",
+      "type": "MiVox",
+      "bitOffset": 24,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Squelch",
+      "type": "MiSquelch",
+      "bitOffset": 26,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "LED Indicator",
+      "type": "MiLedIndicator",
+      "bitOffset": 27,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Keyboard Lock",
+      "type": "MiKeyboardLock",
+      "bitOffset": 28,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Intro Screen",
+      "type": "MiIntroScreen",
+      "bitOffset": 29,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Backlight",
+      "type": "MiBacklight",
+      "bitOffset": 30,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Power",
+      "type": "MiPower",
+      "bitOffset": 31,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "GPS",
+      "type": "MiGps",
+      "bitOffset": 36,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Program Radio",
+      "type": "MiProgramRadio",
+      "bitOffset": 37,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Display Mode",
+      "type": "MiDisplayMode",
+      "bitOffset": 38,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Password And Lock",
+      "type": "MiPasswordAndLock",
+      "bitOffset": 39,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Message",
+      "type": "TmTextMessage",
+      "bitOffset": 0,
+      "bitSize": 2304,
+      "defaultValue": "Hello",
+      "valueType": "textMessage"
+    },
+    {
+      "typeName": "Button",
+      "type": "RbButton",
+      "bitOffset": 0,
+      "bitSize": 8,
+      "valueType": "radioButton",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Unassigned (default)"
+        },
+        {
+          "index": 1,
+          "string": "All alert Tones On/Off"
+        },
+        {
+          "index": 2,
+          "string": "Emergency On"
+        },
+        {
+          "index": 3,
+          "string": "Emergency Off"
+        },
+        {
+          "index": 4,
+          "string": "High/Low Power"
+        },
+        {
+          "index": 5,
+          "string": "Monitor"
+        },
+        {
+          "index": 6,
+          "string": "Nuisance Delete"
+        },
+        {
+          "index": 7,
+          "string": "One Touch Access 1"
+        },
+        {
+          "index": 8,
+          "string": "One Touch Access 2"
+        },
+        {
+          "index": 9,
+          "string": "One Touch Access 3"
+        },
+        {
+          "index": 10,
+          "string": "One Touch Access 4"
+        },
+        {
+          "index": 11,
+          "string": "One Touch Access 5"
+        },
+        {
+          "index": 12,
+          "string": "One Touch Access 6"
+        },
+        {
+          "index": 13,
+          "string": "Repeater/Talkaround"
+        },
+        {
+          "index": 14,
+          "string": "Scan On/Off"
+        },
+        {
+          "index": 21,
+          "string": "Squelch Tight/Normal"
+        },
+        {
+          "index": 22,
+          "string": "Privacy On/Off"
+        },
+        {
+          "index": 23,
+          "string": "VOX On/Off"
+        },
+        {
+          "index": 24,
+          "string": "Zone +"
+        },
+        {
+          "index": 25,
+          "string": "Zone Toggle"
+        },
+        {
+          "index": 26,
+          "string": "Battery Indicator"
+        },
+        {
+          "index": 30,
+          "string": "Manual Dial For Private"
+        },
+        {
+          "index": 31,
+          "string": "Lone Work On/Off"
+        },
+        {
+          "index": 38,
+          "string": "1750 Hz"
+        },
+        {
+          "index": 80,
+          "string": "Toggle Backlight (md380tools)"
+        },
+        {
+          "index": 81,
+          "string": "Set Talkgroup (md380tools)"
+        },
+        {
+          "index": 82,
+          "string": "Morse Narrator (md380tools)"
+        },
+        {
+          "index": 83,
+          "string": "Morse Repeat (md380tools)"
+        },
+        {
+          "index": 84,
+          "string": "Screen Toggle (md380tools)"
+        },
+        {
+          "index": 85,
+          "string": "Mic Gain 0/3/6 dB (md380tools)"
+        },
+        {
+          "index": 86,
+          "string": "Promiscuous Mode On/Off (md380tools)"
+        }
+      ]
+    },
+    {
+      "typeName": "Button",
+      "type": "RbButton_md40",
+      "bitOffset": 0,
+      "bitSize": 8,
+      "valueType": "radioButton",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Unassigned (default)"
+        },
+        {
+          "index": 1,
+          "string": "All alert Tones On/Off"
+        },
+        {
+          "index": 2,
+          "string": "Emergency On"
+        },
+        {
+          "index": 3,
+          "string": "Emergency Off"
+        },
+        {
+          "index": 4,
+          "string": "Power Select"
+        },
+        {
+          "index": 5,
+          "string": "Monitor"
+        },
+        {
+          "index": 7,
+          "string": "One Touch Access 1"
+        },
+        {
+          "index": 8,
+          "string": "One Touch Access 2"
+        },
+        {
+          "index": 9,
+          "string": "One Touch Access 3"
+        },
+        {
+          "index": 10,
+          "string": "One Touch Access 4"
+        },
+        {
+          "index": 11,
+          "string": "One Touch Access 5"
+        },
+        {
+          "index": 12,
+          "string": "One Touch Access 6"
+        },
+        {
+          "index": 13,
+          "string": "Repeater/Talkaround"
+        },
+        {
+          "index": 14,
+          "string": "Scan On/Off"
+        },
+        {
+          "index": 22,
+          "string": "Privacy On/Off"
+        },
+        {
+          "index": 23,
+          "string": "VOX On/Off"
+        },
+        {
+          "index": 30,
+          "string": "Manual Dial For Private"
+        },
+        {
+          "index": 31,
+          "string": "Lone Work On/Off"
+        },
+        {
+          "index": 34,
+          "string": "Record On/Off (Firmware)"
+        },
+        {
+          "index": 35,
+          "string": "Record Playback (Firmware)"
+        },
+        {
+          "index": 36,
+          "string": "Delete All Recorded (Firmware)"
+        }
+      ]
+    },
+    {
+      "typeName": "Button",
+      "type": "RbButton_uv380",
+      "bitOffset": 0,
+      "bitSize": 8,
+      "valueType": "radioButton",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Unassigned (default)"
+        },
+        {
+          "index": 1,
+          "string": "All alert Tones On/Off"
+        },
+        {
+          "index": 2,
+          "string": "Emergency On"
+        },
+        {
+          "index": 3,
+          "string": "Emergency Off"
+        },
+        {
+          "index": 4,
+          "string": "High/Low Power"
+        },
+        {
+          "index": 5,
+          "string": "Monitor"
+        },
+        {
+          "index": 6,
+          "string": "Nuisance Delete"
+        },
+        {
+          "index": 7,
+          "string": "One Touch Access 1"
+        },
+        {
+          "index": 8,
+          "string": "One Touch Access 2"
+        },
+        {
+          "index": 9,
+          "string": "One Touch Access 3"
+        },
+        {
+          "index": 10,
+          "string": "One Touch Access 4"
+        },
+        {
+          "index": 11,
+          "string": "One Touch Access 5"
+        },
+        {
+          "index": 12,
+          "string": "One Touch Access 6"
+        },
+        {
+          "index": 13,
+          "string": "Repeater/Talkaround"
+        },
+        {
+          "index": 14,
+          "string": "Scan On/Off"
+        },
+        {
+          "index": 21,
+          "string": "Squelch Tight/Normal"
+        },
+        {
+          "index": 22,
+          "string": "Privacy On/Off"
+        },
+        {
+          "index": 23,
+          "string": "VOX On/Off"
+        },
+        {
+          "index": 24,
+          "string": "Zone +"
+        },
+        {
+          "index": 25,
+          "string": "Zone Toggle"
+        },
+        {
+          "index": 26,
+          "string": "Battery Indicator"
+        },
+        {
+          "index": 30,
+          "string": "Manual Dial For Private"
+        },
+        {
+          "index": 31,
+          "string": "Lone Work On/Off"
+        },
+        {
+          "index": 34,
+          "string": "Record On/Off (Firmware)"
+        },
+        {
+          "index": 35,
+          "string": "Record Playback (Firmware)"
+        },
+        {
+          "index": 36,
+          "string": "Delete All Recorded (Firmware)"
+        },
+        {
+          "index": 38,
+          "string": "1750 Hz"
+        },
+        {
+          "index": 47,
+          "string": "Toggle Up/Down"
+        },
+        {
+          "index": 48,
+          "string": "Right Key"
+        },
+        {
+          "index": 49,
+          "string": "Left Key"
+        },
+        {
+          "index": 55,
+          "string": "Zone -"
+        }
+      ]
+    },
+    {
+      "typeName": "Button",
+      "type": "RbButton_rt84",
+      "bitOffset": 0,
+      "bitSize": 8,
+      "valueType": "radioButton",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Unassigned (default)"
+        },
+        {
+          "index": 1,
+          "string": "All alert Tones On/Off"
+        },
+        {
+          "index": 2,
+          "string": "Emergency On"
+        },
+        {
+          "index": 3,
+          "string": "Emergency Off"
+        },
+        {
+          "index": 4,
+          "string": "High/Low Power"
+        },
+        {
+          "index": 5,
+          "string": "Monitor"
+        },
+        {
+          "index": 7,
+          "string": "One Touch Access 1"
+        },
+        {
+          "index": 8,
+          "string": "One Touch Access 2"
+        },
+        {
+          "index": 9,
+          "string": "One Touch Access 3"
+        },
+        {
+          "index": 10,
+          "string": "One Touch Access 4"
+        },
+        {
+          "index": 11,
+          "string": "One Touch Access 5"
+        },
+        {
+          "index": 12,
+          "string": "One Touch Access 6"
+        },
+        {
+          "index": 13,
+          "string": "Repeater/Talkaround"
+        },
+        {
+          "index": 14,
+          "string": "Scan On/Off"
+        },
+        {
+          "index": 21,
+          "string": "Squelch Tight/Normal"
+        },
+        {
+          "index": 22,
+          "string": "Privacy On/Off"
+        },
+        {
+          "index": 23,
+          "string": "VOX On/Off"
+        },
+        {
+          "index": 24,
+          "string": "Zone Select"
+        },
+        {
+          "index": 26,
+          "string": "Battery Indicator"
+        },
+        {
+          "index": 31,
+          "string": "Lone Work On/Off"
+        },
+        {
+          "index": 34,
+          "string": "Record On/Off (Firmware)"
+        },
+        {
+          "index": 35,
+          "string": "Record Playback (Firmware)"
+        },
+        {
+          "index": 36,
+          "string": "Delete All Recorded (Firmware)"
+        },
+        {
+          "index": 38,
+          "string": "1750 Hz"
+        },
+        {
+          "index": 47,
+          "string": "Toggle Up/Down"
+        },
+        {
+          "index": 48,
+          "string": "Right Key"
+        },
+        {
+          "index": 49,
+          "string": "Left Key"
+        }
+      ]
+    },
+    {
+      "typeName": "Long Press Duration (mS)",
+      "type": "BdLongPressDuration",
+      "bitOffset": 0,
+      "bitSize": 8,
+      "defaultValue": "1000",
+      "valueType": "span",
+      "span": {
+        "min": 4,
+        "max": 15,
+        "scale": 250
+      }
+    },
+    {
+      "typeName": "Mode",
+      "type": "OtMode",
+      "bitOffset": 0,
+      "bitSize": 6,
+      "defaultValue": "Digital",
+      "valueType": "indexedStrings",
+      "indexedStrings": [
+        {
+          "index": 48,
+          "string": "None"
+        },
+        {
+          "index": 52,
+          "string": "Digital"
+        },
+        {
+          "index": 58,
+          "string": "Analog"
+        }
+      ],
+      "enables": [
+        {
+          "value": "Digital",
+          "enables": [
+            "OtCall",
+            "OtCallType"
+          ],
+          "disables": [
+            "OtDTMF",
+            "OtEncode"
+          ]
+        },
+        {
+          "value": "Analog",
+          "enables": [
+            "OtDTMF",
+            "OtEncode"
+          ],
+          "disables": [
+            "OtCall",
+            "OtCallType"
+          ]
+        },
+        {
+          "value": "None",
+          "disables": [
+            "OtCall",
+            "OtCallType",
+            "OtDTMF",
+            "OtEncode",
+            "OtDTMF",
+            "OtEncode"
+          ]
+        }
+      ]
+    },
+    {
+      "typeName": "Call Type",
+      "type": "OtCallType",
+      "bitOffset": 6,
+      "bitSize": 2,
+      "defaultValue": "Call",
+      "valueType": "iStrings",
+      "strings": [
+        "Call",
+        "Text Message"
+      ],
+      "enables": [
+        {
+          "value": "Text Message",
+          "enables": [
+            "OtTextMessage"
+          ]
+        }
+      ]
+    },
+    {
+      "typeName": "DTMF",
+      "type": "OtDTMF",
+      "bitOffset": 6,
+      "bitSize": 2,
+      "defaultValue": "DTMF-1",
+      "valueType": "iStrings",
+      "strings": [
+        "DTMF-1",
+        "DTMF-2",
+        "DTMF-3",
+        "DTMF-4"
+      ]
+    },
+    {
+      "typeName": "Text Message",
+      "type": "OtTextMessage",
+      "bitOffset": 8,
+      "bitSize": 8,
+      "valueType": "derefListIndex",
+      "listType": "TextMessages"
+    },
+    {
+      "typeName": "Encode",
+      "type": "OtEncode",
+      "bitOffset": 8,
+      "bitSize": 8,
+      "valueType": "iStrings",
+      "strings": [
+        "To be implemented"
+      ]
+    },
+    {
+      "typeName": "Call",
+      "type": "OtCall",
+      "bitOffset": 16,
+      "bitSize": 16,
+      "valueType": "contactListIndex",
+      "listType": "Contacts"
+    },
+    {
+      "typeName": "Contact",
+      "type": "NkContact",
+      "bitOffset": 0,
+      "bitSize": 16,
+      "valueType": "nkContactListIndex",
+      "listType": "Contacts",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "None"
+        }
+      ]
+    },
+    {
+      "typeName": "Key Value (Enhanced)",
+      "type": "PsEnhancedKey",
+      "bitOffset": 0,
+      "bitSize": 128,
+      "max": 8,
+      "defaultValue": "ffffffffffffffffffffffffffffffff",
+      "valueType": "hexadecimal32"
+    },
+    {
+      "typeName": "Key Value (Basic)",
+      "type": "PsBasicKey",
+      "bitOffset": 1152,
+      "bitSize": 16,
+      "max": 16,
+      "defaultValue": "ffff",
+      "valueType": "hexadecimal4"
+    },
+    {
+      "typeName": "Call ID",
+      "type": "DcCallID",
+      "bitOffset": 0,
+      "bitSize": 24,
+      "defaultValue": "1",
+      "valueType": "callID"
+    },
+    {
+      "typeName": "Call Receive Tone",
+      "type": "DcCallReceiveTone",
+      "bitOffset": 26,
+      "bitSize": 1,
+      "defaultValue": "No",
+      "valueType": "iStrings",
+      "strings": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "typeName": "Call Type",
+      "type": "DcCallType",
+      "bitOffset": 30,
+      "bitSize": 2,
+      "defaultValue": "Group",
+      "valueType": "callType",
+      "indexedStrings": [
+        {
+          "index": 1,
+          "string": "Group"
+        },
+        {
+          "index": 2,
+          "string": "Private"
+        },
+        {
+          "index": 3,
+          "string": "All"
+        }
+      ]
+    },
+    {
+      "typeName": "Contact Name",
+      "type": "DcName",
+      "bitOffset": 32,
+      "bitSize": 256,
+      "defaultValue": "Contact1",
+      "valueType": "contactName"
+    },
+    {
+      "typeName": "RX Group List Name",
+      "type": "GlName",
+      "bitOffset": 0,
+      "bitSize": 256,
+      "defaultValue": "GroupList1",
+      "valueType": "name"
+    },
+    {
+      "typeName": "Contacts",
+      "type": "GlContact",
+      "bitOffset": 256,
+      "bitSize": 16,
+      "max": 32,
+      "valueType": "contactListIndex",
+      "listType": "Contacts"
+    },
+    {
+      "typeName": "Zone Name",
+      "type": "ZiName",
+      "bitOffset": 0,
+      "bitSize": 256,
+      "defaultValue": "Zone1",
+      "valueType": "name"
+    },
+    {
+      "typeName": "Channels",
+      "type": "ZiChannel_md380",
+      "bitOffset": 256,
+      "bitSize": 16,
+      "max": 16,
+      "valueType": "listIndex",
+      "listType": "Channels_md380"
+    },
+    {
+      "typeName": "Channels",
+      "type": "ZiChannel_md40",
+      "bitOffset": 256,
+      "bitSize": 16,
+      "max": 64,
+      "valueType": "listIndex",
+      "listType": "Channels_md40",
+      "extOffset": 201253,
+      "extSize": 224,
+      "extIndex": 16
+    },
+    {
+      "typeName": "A Channels",
+      "type": "ZiChannelA_uv380",
+      "bitOffset": 256,
+      "bitSize": 16,
+      "max": 64,
+      "valueType": "listIndex",
+      "listType": "Channels_uv380",
+      "extOffset": 201253,
+      "extBitOffset": 0,
+      "extSize": 224,
+      "extIndex": 16
+    },
+    {
+      "typeName": "B Channels",
+      "type": "ZiChannelB_uv380",
+      "bitOffset": 256,
+      "bitSize": 16,
+      "max": 64,
+      "valueType": "listIndex",
+      "listType": "Channels_uv380",
+      "extOffset": 201253,
+      "extBitOffset": 768,
+      "extSize": 224,
+      "extIndex": 0
+    },
+    {
+      "typeName": "Scan List Name",
+      "type": "SlName",
+      "bitOffset": 0,
+      "bitSize": 256,
+      "defaultValue": "ScanList1",
+      "valueType": "name"
+    },
+    {
+      "typeName": "Priority Channel 1",
+      "type": "SlPriorityChannel1_md380",
+      "bitOffset": 256,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "memberListIndex",
+      "listType": "Channels_md380",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Selected"
+        },
+        {
+          "index": 65535,
+          "string": "None"
+        }
+      ],
+      "enable": {
+        "value": "None",
+        "disables": [
+          "SlPriorityChannel2_md380"
+        ]
+      }
+    },
+    {
+      "typeName": "Priority Channel 1",
+      "type": "SlPriorityChannel1_md40",
+      "bitOffset": 256,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "memberListIndex",
+      "listType": "Channels_md40",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Selected"
+        },
+        {
+          "index": 65535,
+          "string": "None"
+        }
+      ],
+      "enable": {
+        "value": "None",
+        "disables": [
+          "SlPriorityChannel2_md40"
+        ]
+      }
+    },
+    {
+      "typeName": "Priority Channel 2",
+      "type": "SlPriorityChannel2_md380",
+      "bitOffset": 272,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "memberListIndex",
+      "listType": "Channels_md380",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Selected"
+        },
+        {
+          "index": 65535,
+          "string": "None"
+        }
+      ]
+    },
+    {
+      "typeName": "Priority Channel 2",
+      "type": "SlPriorityChannel2_md40",
+      "bitOffset": 272,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "memberListIndex",
+      "listType": "Channels_md40",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Selected"
+        },
+        {
+          "index": 65535,
+          "string": "None"
+        }
+      ]
+    },
+    {
+      "typeName": "Tx Designated Channel",
+      "type": "SlTxDesignatedChannel_md380",
+      "bitOffset": 288,
+      "bitSize": 16,
+      "defaultValue": "Last Active Channel",
+      "valueType": "listIndex",
+      "listType": "Channels_md380",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Selected"
+        },
+        {
+          "index": 65535,
+          "string": "Last Active Channel"
+        }
+      ]
+    },
+    {
+      "typeName": "Tx Designated Channel",
+      "type": "SlTxDesignatedChannel_md40",
+      "bitOffset": 288,
+      "bitSize": 16,
+      "defaultValue": "Last Active Channel",
+      "valueType": "listIndex",
+      "listType": "Channels_md40",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Selected"
+        },
+        {
+          "index": 65535,
+          "string": "Last Active Channel"
+        }
+      ]
+    },
+    {
+      "typeName": "Signalling Hold Time (mS)",
+      "type": "SlSignallingHoldTime",
+      "bitOffset": 312,
+      "bitSize": 8,
+      "defaultValue": "500",
+      "valueType": "spanList",
+      "span": {
+        "min": 2,
+        "max": 255,
+        "scale": 25
+      }
+    },
+    {
+      "typeName": "Priority Sample Time (mS)",
+      "type": "SlPrioritySampleTime",
+      "bitOffset": 320,
+      "bitSize": 8,
+      "defaultValue": "2000",
+      "valueType": "spanList",
+      "span": {
+        "min": 3,
+        "max": 31,
+        "scale": 250
+      }
+    },
+    {
+      "typeName": "Channels",
+      "type": "SlChannel_md380",
+      "bitOffset": 336,
+      "bitSize": 16,
+      "max": 31,
+      "valueType": "listIndex",
+      "listType": "Channels_md380"
+    },
+    {
+      "typeName": "Channels",
+      "type": "SlChannel_md40",
+      "bitOffset": 336,
+      "bitSize": 16,
+      "max": 31,
+      "valueType": "listIndex",
+      "listType": "Channels_md40"
+    },
+    {
+      "typeName": "Lone Worker",
+      "type": "CiLoneWorker",
+      "bitOffset": 0,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Squelch",
+      "type": "CiSquelch",
+      "bitOffset": 2,
+      "bitSize": 1,
+      "defaultValue": "Normal",
+      "valueType": "iStrings",
+      "strings": [
+        "Tight",
+        "Normal"
+      ]
+    },
+    {
+      "typeName": "Squelch",
+      "type": "CiSquelch_uv380",
+      "bitOffset": 124,
+      "bitSize": 4,
+      "defaultValue": "1",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 9
+      }
+    },
+    {
+      "typeName": "Autoscan",
+      "type": "CiAutoscan",
+      "bitOffset": 3,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Bandwidth (KHz)",
+      "type": "CiBandwidth",
+      "bitOffset": 4,
+      "bitSize": 2,
+      "defaultValue": "12.5",
+      "valueType": "bandwidth",
+      "strings": [
+        "12.5",
+        "20",
+        "25"
+      ]
+    },
+    {
+      "typeName": "Channel Mode",
+      "type": "CiChannelMode",
+      "bitOffset": 6,
+      "bitSize": 2,
+      "defaultValue": "Analog",
+      "valueType": "indexedStrings",
+      "indexedStrings": [
+        {
+          "index": 1,
+          "string": "Analog"
+        },
+        {
+          "index": 2,
+          "string": "Digital"
+        }
+      ],
+      "enable": {
+        "value": "Digital",
+        "enables": [
+          "CiPrivateCallConfirmed",
+          "CiEmergencyAlarmAck",
+          "CiDataCallConfirmed",
+          "CiCompressedUdpDataHeader",
+          "CiEmergencySystem",
+          "CiContactName",
+          "CiGroupList",
+          "CiColorCode",
+          "CiRepeaterSlot",
+          "CiPrivacy",
+          "CiDCDMSwitch",
+          "CiInCallCriteria",
+          "CiGPSSystem"
+        ],
+        "disables": [
+          "CiCtcssDecode",
+          "CiRxSignallingSystem",
+          "CiDisplayPTTID",
+          "CiCtcssEncode",
+          "CiBandwidth",
+          "CiTxSignallingSystem",
+          "CiDQTTurnoffFreq"
+        ]
+      }
+    },
+    {
+      "typeName": "Color Code",
+      "type": "CiColorCode",
+      "bitOffset": 8,
+      "bitSize": 4,
+      "defaultValue": "1",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "typeName": "Repeater Slot",
+      "type": "CiRepeaterSlot",
+      "bitOffset": 12,
+      "bitSize": 2,
+      "defaultValue": "1",
+      "valueType": "indexedStrings",
+      "indexedStrings": [
+        {
+          "index": 1,
+          "string": "1"
+        },
+        {
+          "index": 2,
+          "string": "2"
+        }
+      ]
+    },
+    {
+      "typeName": "Rx Only",
+      "type": "CiRxOnly",
+      "bitOffset": 14,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Allow Talkaround",
+      "type": "CiAllowTalkaround",
+      "bitOffset": 15,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Data Call Confirmed",
+      "type": "CiDataCallConfirmed",
+      "bitOffset": 16,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Private Call Confimed",
+      "type": "CiPrivateCallConfirmed",
+      "bitOffset": 17,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Privacy",
+      "type": "CiPrivacy",
+      "bitOffset": 18,
+      "bitSize": 2,
+      "defaultValue": "None",
+      "valueType": "iStrings",
+      "strings": [
+        "None",
+        "Basic",
+        "Enhanced"
+      ],
+      "enable": {
+        "value": "None",
+        "disables": [
+          "CiPrivacyNumber"
+        ]
+      }
+    },
+    {
+      "typeName": "Privacy Number",
+      "type": "CiPrivacyNumber",
+      "bitOffset": 20,
+      "bitSize": 4,
+      "defaultValue": "1",
+      "valueType": "privacyNumber",
+      "strings": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "typeName": "Display PTT ID",
+      "type": "CiDisplayPTTID",
+      "bitOffset": 24,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Compressed UDP Data Header",
+      "type": "CiCompressedUdpDataHeader",
+      "bitOffset": 25,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Talkaround",
+      "type": "CiTalkaround",
+      "bitOffset": 26,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Emergency Alarm Ack",
+      "type": "CiEmergencyAlarmAck",
+      "bitOffset": 28,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Rx Ref Frequency",
+      "type": "CiRxRefFrequency",
+      "bitOffset": 30,
+      "bitSize": 2,
+      "defaultValue": "Low",
+      "valueType": "iStrings",
+      "strings": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "typeName": "Admit Criteria",
+      "type": "CiAdmitCriteria",
+      "bitOffset": 32,
+      "bitSize": 2,
+      "defaultValue": "Always",
+      "valueType": "iStrings",
+      "strings": [
+        "Always",
+        "Channel free",
+        "CTCSS/DCS",
+        "Color code"
+      ]
+    },
+    {
+      "typeName": "Power",
+      "type": "CiPower",
+      "bitOffset": 34,
+      "bitSize": 1,
+      "defaultValue": "High",
+      "valueType": "iStrings",
+      "strings": [
+        "Low",
+        "High"
+      ]
+    },
+    {
+      "typeName": "VOX",
+      "type": "CiVox",
+      "bitOffset": 35,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "QT Reverse",
+      "type": "CiQtReverse",
+      "bitOffset": 36,
+      "bitSize": 1,
+      "defaultValue": "180",
+      "valueType": "iStrings",
+      "strings": [
+        "180",
+        "120"
+      ]
+    },
+    {
+      "typeName": "Reverse Burst/Turn Off Code",
+      "type": "CiReverseBurst",
+      "bitOffset": 37,
+      "bitSize": 1,
+      "defaultValue": "On",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Tx Ref Frequency",
+      "type": "CiTxRefFrequency",
+      "bitOffset": 38,
+      "bitSize": 2,
+      "defaultValue": "Low",
+      "valueType": "iStrings",
+      "strings": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "typeName": "Non-QT/DQT Turn-off Freq",
+      "type": "CiDQTTurnoffFreq",
+      "bitOffset": 40,
+      "bitSize": 2,
+      "defaultValue": "None",
+      "valueType": "indexedStrings",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "259.2 Hz"
+        },
+        {
+          "index": 2,
+          "string": "55.2 Hz"
+        },
+        {
+          "index": 3,
+          "string": "None"
+        }
+      ]
+    },
+    {
+      "typeName": "In Call Criteria",
+      "type": "CiInCallCriteria",
+      "bitOffset": 43,
+      "bitSize": 1,
+      "defaultValue": "Always",
+      "valueType": "iStrings",
+      "strings": [
+        "Always",
+        "Follow Admit Criteria"
+      ]
+    },
+    {
+      "typeName": "Contact Name",
+      "type": "CiContactName",
+      "bitOffset": 48,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "contactListIndex",
+      "listType": "Contacts",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "None"
+        }
+      ],
+      "enable": {
+        "value": "None",
+        "disables": [
+          "CiAllowInterrupt"
+        ]
+      }
+    },
+    {
+      "typeName": "TOT (S)",
+      "type": "CiTot",
+      "bitOffset": 64,
+      "bitSize": 8,
+      "defaultValue": "60",
+      "valueType": "span",
+      "span": {
+        "min": 0,
+        "max": 37,
+        "scale": 15,
+        "minString": "Infinite"
+      }
+    },
+    {
+      "typeName": "TOT Rekey Delay (S)",
+      "type": "CiTotRekeyDelay",
+      "bitOffset": 72,
+      "bitSize": 8,
+      "defaultValue": "0",
+      "valueType": "span",
+      "span": {
+        "min": 0,
+        "max": 255
+      }
+    },
+    {
+      "typeName": "Emergency System",
+      "type": "CiEmergencySystem",
+      "bitOffset": 80,
+      "bitSize": 8,
+      "defaultValue": "None",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 32,
+        "minString": "None"
+      }
+    },
+    {
+      "typeName": "Scan List",
+      "type": "CiScanList_md380",
+      "bitOffset": 88,
+      "bitSize": 8,
+      "defaultValue": "None",
+      "valueType": "listIndex",
+      "listType": "ScanLists_md380",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "None"
+        }
+      ]
+    },
+    {
+      "typeName": "Scan List",
+      "type": "CiScanList_md40",
+      "bitOffset": 88,
+      "bitSize": 8,
+      "defaultValue": "None",
+      "valueType": "listIndex",
+      "listType": "ScanLists_md40",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "None"
+        }
+      ]
+    },
+    {
+      "typeName": "RX Group List",
+      "type": "CiGroupList",
+      "bitOffset": 96,
+      "bitSize": 8,
+      "defaultValue": "None",
+      "valueType": "listIndex",
+      "listType": "GroupLists",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "None"
+        }
+      ]
+    },
+    {
+      "typeName": "GPS System",
+      "type": "CiGPSSystem",
+      "bitOffset": 104,
+      "bitSize": 8,
+      "defaultValue": "None",
+      "valueType": "spanList",
+      "span": {
+        "min": 0,
+        "max": 16,
+        "minString": "None"
+      }
+    },
+    {
+      "typeName": "Decode 1",
+      "type": "CiDecode1",
+      "bitOffset": 112,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Decode 2",
+      "type": "CiDecode2",
+      "bitOffset": 113,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Decode 3",
+      "type": "CiDecode3",
+      "bitOffset": 114,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Decode 4",
+      "type": "CiDecode4",
+      "bitOffset": 115,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Decode 5",
+      "type": "CiDecode5",
+      "bitOffset": 116,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Decode 6",
+      "type": "CiDecode6",
+      "bitOffset": 117,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Decode 7",
+      "type": "CiDecode7",
+      "bitOffset": 118,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Decode 8",
+      "type": "CiDecode8",
+      "bitOffset": 119,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "offOn"
+    },
+    {
+      "typeName": "Rx Frequency (MHz)",
+      "type": "CiRxFrequency",
+      "bitOffset": 128,
+      "bitSize": 32,
+      "defaultValue": "0",
+      "valueType": "frequency"
+    },
+    {
+      "typeName": "Tx Offset (MHz)",
+      "type": "CiTxFrequencyOffset",
+      "bitOffset": 160,
+      "bitSize": 32,
+      "defaultValue": "0",
+      "valueType": "frequencyOffset",
+      "enable": {
+        "value": "+0.00000",
+        "disables": [
+          "CiAllowTalkaround"
+        ]
+      }
+    },
+    {
+      "typeName": "CTCSS/DCS Decode",
+      "type": "CiCtcssDecode",
+      "bitOffset": 192,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "ctcssDcs"
+    },
+    {
+      "typeName": "CTCSS/DCS Encode",
+      "type": "CiCtcssEncode",
+      "bitOffset": 208,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "ctcssDcs",
+      "enable": {
+        "value": "None",
+        "disables": [
+          "CiReverseBurst",
+          "CiQtReverse"
+        ]
+      }
+    },
+    {
+      "typeName": "Rx Signaling System",
+      "type": "CiRxSignallingSystem",
+      "bitOffset": 224,
+      "bitSize": 8,
+      "defaultValue": "Off",
+      "valueType": "iStrings",
+      "strings": [
+        "Off",
+        "DTMF-1",
+        "DTMF-2",
+        "DTMF-3",
+        "DTMF-4"
+      ],
+      "enable": {
+        "value": "Off",
+        "disables": [
+          "CiDecode1",
+          "CiDecode2",
+          "CiDecode3",
+          "CiDecode4",
+          "CiDecode5",
+          "CiDecode6",
+          "CiDecode7",
+          "CiDecode8"
+        ]
+      }
+    },
+    {
+      "typeName": "Tx Signaling System",
+      "type": "CiTxSignallingSystem",
+      "bitOffset": 232,
+      "bitSize": 8,
+      "defaultValue": "Off",
+      "valueType": "iStrings",
+      "strings": [
+        "Off",
+        "DTMF-1",
+        "DTMF-2",
+        "DTMF-3",
+        "DTMF-4"
+      ]
+    },
+    {
+      "typeName": "Power",
+      "type": "CiPower_uv380",
+      "bitOffset": 246,
+      "bitSize": 2,
+      "defaultValue": "High",
+      "valueType": "indexedStrings",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Low"
+        },
+        {
+          "index": 2,
+          "string": "Medium"
+        },
+        {
+          "index": 3,
+          "string": "High"
+        }
+      ]
+    },
+    {
+      "typeName": "Leader/MS",
+      "type": "CiLeaderMS",
+      "bitOffset": 251,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "DCDM Switch",
+      "type": "CiDCDMSwitch",
+      "bitOffset": 252,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff",
+      "enable": {
+        "value": "On",
+        "enables": [
+          "CiLeaderMS"
+        ]
+      }
+    },
+    {
+      "typeName": "Allow Interrupt",
+      "type": "CiAllowInterrupt",
+      "bitOffset": 253,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Receive GPS Info",
+      "type": "CiReceiveGPSInfo",
+      "bitOffset": 254,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Send GPS Info",
+      "type": "CiSendGPSInfo",
+      "bitOffset": 255,
+      "bitSize": 1,
+      "defaultValue": "Off",
+      "valueType": "onOff"
+    },
+    {
+      "typeName": "Channel Name",
+      "type": "CiName",
+      "bitOffset": 256,
+      "bitSize": 256,
+      "defaultValue": "Channel1",
+      "valueType": "name"
+    },
+    {
+      "typeName": "GPS Revert Channel",
+      "type": "GpGPSRevertChannel",
+      "bitOffset": 0,
+      "bitSize": 16,
+      "defaultValue": "Current Channel",
+      "valueType": "gpsListIndex",
+      "listType": "Channels_md380",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "Current Channel"
+        }
+      ]
+    },
+    {
+      "typeName": "GPS Default Report Interval (S)",
+      "type": "GpGPSDefaultReportInterval",
+      "bitOffset": 16,
+      "bitSize": 8,
+      "defaultValue": "Off",
+      "valueType": "gpsReportInterval",
+      "span": {
+        "min": 0,
+        "max": 240,
+        "scale": 30,
+        "minString": "Off"
+      }
+    },
+    {
+      "typeName": "Destination ID",
+      "type": "GpDestinationID",
+      "bitOffset": 32,
+      "bitSize": 16,
+      "defaultValue": "None",
+      "valueType": "gpsListIndex",
+      "listType": "Contacts",
+      "indexedStrings": [
+        {
+          "index": 0,
+          "string": "None"
+        }
+      ]
+    }
+  ]
+}

@@ -45,7 +45,7 @@ import java.util.Date
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainScreen(vm: MainViewModel) {
+fun MainScreen(vm: MainViewModel, openEditor: () -> Unit) {
     val s = vm.state
     val progress by vm.progress.collectAsState()
     var confirmWrite by remember { mutableStateOf(false) }
@@ -103,6 +103,9 @@ fun MainScreen(vm: MainViewModel) {
                         enabled = !s.busy && t != null && vm.formError() == null,
                     ) { Text("Сохранить с полями") }
                 }
+                Button(onClick = openEditor, enabled = !s.busy && t != null, modifier = Modifier.fillMaxWidth()) {
+                    Text("Редактор кодплага: каналы, зоны, контакты, ключи…")
+                }
             }
 
             // --- параметры ---
@@ -129,6 +132,10 @@ fun MainScreen(vm: MainViewModel) {
                     label = { Text("Заставка, строка 2 (до ${Codeplug.INTRO_MAX})") },
                     singleLine = true, modifier = Modifier.fillMaxWidth(),
                 )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Switch(checked = s.introAsText, onCheckedChange = vm::setIntroAsText)
+                    Text("  При включении показывать надпись (а не картинку)")
+                }
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Switch(checked = s.autoIncrement, onCheckedChange = vm::setAutoIncrement)
                     Text("  ID +1 после успешной записи")
